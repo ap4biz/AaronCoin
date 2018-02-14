@@ -1,2 +1,6 @@
 const char CRYPTONOTE_NAME[] = "AaronCoin";
 set_property(TARGET daemon PROPERTY OUTPUT_NAME "AaronCoin")
+const uint64_t MONEY_SUPPLY = (uint64_t)(-1);
+const unsigned EMISSION_SPEED_FACTOR = 18;
+const uint64_t DIFFICULTY_TARGET = 120;
+uint64_t baseReward = (m_moneySupply - alreadyGeneratedCoins) >> m_emissionSpeedFactor;
